@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("../assets/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  font-size: 2rem;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background-color: rgb(19, 16, 16);
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 10px 10px rgb(106, 36, 138);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0 16px 16px -5px rgb(148, 99, 170),
+    0 16px 16px -5px rgb(148, 99, 170);
+  letter-spacing: 2px;
+}
+.button-container button i {
+  font-size: 2.2rem;
+  margin-right: 10px;
+}
+
+.button-container button:hover {
+  background-image: linear-gradient(to right, indigo, violet);
+  border: 1px solid rgb(19, 16, 16);
+  transform: translateY(3px);
+  text-shadow: 0 16px 16px rgb(248, 248, 248);
+}
+
+.button-container button:active {
+  transform: translateY(15px);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../assets/coverSmall.jpg");
+  }
+}
